@@ -1,7 +1,15 @@
 GAUncert
 ========
 
-Combined multi-objective optimisation and uncertainty analysis tool
+Combined multi-objective optimisation and uncertainty analysis tool.
+
+GAUncert allows you to run a computational model with many different stochastic input sets and collate the results. The model can then be optimized with a genetic algorithm to find optimal solutions, based on objectives and constraints calculated from the collated stochastic results.
+
+GAUncert supports [eWater's Source EMS][1] water distrubtion models out of the box, but can of course be adapted for other computational models. The thousands of runs required are done in parallel using OpenMPI so  that a computing cluster can be used to reduce runtime.
+
+This project is a quick and dirty proof of concept and is not thoroughly tested, polished, or user friendly, though it may prove useful.
+
+[1]: http://www.ewater.com.au/products/ewater-source/
 
 Cygwin, openmpi & mpi4py setup instructions
 -------------------------------------------
@@ -83,7 +91,7 @@ along with GAUncert.  If not, see <http://www.gnu.org/licenses/>.
 Contact
 -------
 
-* daniel.kinsman@csiro.au
+* danielkinsman@riseup.net
 * shiroma.maheepala@csiro.au
 * enquiries@csiro.au
 * http://www.csiro.au/Portals/Contact.aspx
